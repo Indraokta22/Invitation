@@ -281,13 +281,13 @@
     transform: translateY(0);
 }
 
-.quote-image {
+.quote-image, .thank-container, .paragraf-container, .kami, .gift-container{
     opacity: 0;
     transform: translateY(80px);
     transition: opacity 2s, transform 2s;
 }
 
-.quote-image.show {
+.quote-image.show, .thank-container.show, .paragraf-container.show, .kami.show, .gift-container.show {
     opacity: 1;
     transform: translateY(0);
 }
@@ -392,20 +392,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 40%;
+    height: 50px;
     background-color: var(--primary-color);
-    width: 190px;
-    height: 60px;
-    margin-right: auto;
     margin-left: auto;
-    padding: 20px;
+    margin-right: auto;
     border-radius: 15px;
+    padding: 5px;
 }
 
 .location a {
     color: var(--highlight);
-    width: 100%;
-    text-decoration: none;
-    margin: 10px;
+}
+
+
+.location #loc {
+    font-size: 1.1rem;
+    margin-left: 10px;
 }
 
 .E {
@@ -497,6 +500,139 @@
     opacity: 1;
 }
 
+.G {
+    background-color: var(--secondary-color);
+    width: 100%;
+}
+
+.thank-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.thank-container h1 {
+    font-size: 2rem;
+    color: var(--highlight);
+
+}
+
+.paragraf-container {
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    background-color: var(--third-color);
+    margin: auto;
+}
+
+.paragraf-container h3 {
+    font-size: 1.3rem;
+}
+
+.kami {
+    text-align: center;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.kami h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: var(--highlight);
+}
+
+.kami h1 {
+    font-size: 2rem;
+    color: var(--highlight);
+}
+
+.gift-container {
+    display: block;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.gift {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 50px;
+    background-color: var(--third-color);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.gift a {
+    color: var(--primary-color);
+    margin-right: 9px;
+}
+
+.gift #text {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--fourth-color);
+}
+
+.love-container {
+    width: 100%;
+    display: block;
+    padding: 30px;
+}
+
+.love-container h2 {
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--third-color);
+    width: 300px;
+}
+
+.logo-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-A {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.logo-A img {
+    width: 90px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social a {
+    color: var(--highlight);
+}
+
+.social p {
+    color: var(--highlight);
+    font-size: 1rem;
+}
 
 /* MEDIA QUERY */
 
@@ -523,7 +659,17 @@
         margin-bottom: 2px;
     }
 
-
+    .slideshow img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 1s ease-in-out;
+    }
 
     .B {
         background-image: url('img/shadow.jpg');
@@ -592,12 +738,14 @@
         font-family: 'Dancing Script', serif;
         color: var(--highlight);
         margin-right: 20px;
+        margin-left: 10px;
     }
 
     .C .container-female .bio h3 {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         margin-top: 20px;
         margin-bottom: 10px;
+        margin-left: 10px;
         color: var(--highlight);
     }
 
@@ -627,7 +775,7 @@
 
     .C .container-male .bio h3 {
         margin-left: 30px;
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         margin-top: 20px;
         margin-bottom: 10px;
         color: var(--highlight);

@@ -139,3 +139,66 @@ function revealImage() {
 window.addEventListener('scroll', revealImage);
 
 
+
+document.addEventListener("DOMContentLoaded", function() {
+    var containerFemale = document.querySelector(".thank-container");
+
+    function revealElement() {
+        var elementPosition = containerFemale.getBoundingClientRect().top;
+        var windowHeight = window.innerHeight;
+
+        if (elementPosition < windowHeight) {
+            containerFemale.classList.add("show");
+        }
+    }
+
+    window.addEventListener("scroll", revealElement);
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    var containerFemale = document.querySelector(".paragraf-container");
+
+    function revealElement() {
+        var elementPosition = containerFemale.getBoundingClientRect().top;
+        var windowHeight = window.innerHeight;
+
+        if (elementPosition < windowHeight) {
+            containerFemale.classList.add("show");
+        }
+    }
+
+    window.addEventListener("scroll", revealElement);
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    var containerFemale = document.querySelector(".kami");
+
+    function revealElement() {
+        var elementPosition = containerFemale.getBoundingClientRect().top;
+        var windowHeight = window.innerHeight;
+
+        if (elementPosition < windowHeight) {
+            containerFemale.classList.add("show");
+        }
+    }
+
+    window.addEventListener("scroll", revealElement);
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    var containerFemale = document.querySelector(".gift-container");
+
+    function revealElement() {
+        var elementPosition = containerFemale.getBoundingClientRect().top;
+        var windowHeight = window.innerHeight;
+
+        if (elementPosition < windowHeight) {
+            containerFemale.classList.add("show");
+        }
+    }
+
+    window.addEventListener("scroll", revealElement);
+});
+
+
