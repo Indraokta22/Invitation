@@ -40,7 +40,7 @@ setInterval(function () {
 }, 3000);
 
 // Reveal animation
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     var containerFemale = document.querySelector(".container-female");
 
     function revealElement() {
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("scroll", revealElement);
 });
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     var containerFemale = document.querySelector(".container-male");
 
     function revealElement() {
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("scroll", revealElement);
 });
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     var containerFemale = document.querySelector(".container-card");
 
     function revealElement() {
@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     var containerFemale = document.querySelector(".quote-image");
 
     function revealElement() {
@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("scroll", revealElement);
 });
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     var containerFemale = document.querySelector(".quote-text");
 
     function revealElement() {
@@ -140,7 +140,7 @@ window.addEventListener('scroll', revealImage);
 
 
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     var containerFemale = document.querySelector(".thank-container");
 
     function revealElement() {
@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     var containerFemale = document.querySelector(".paragraf-container");
 
     function revealElement() {
@@ -171,7 +171,7 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("scroll", revealElement);
 });
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     var containerFemale = document.querySelector(".kami");
 
     function revealElement() {
@@ -186,7 +186,7 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("scroll", revealElement);
 });
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     var containerFemale = document.querySelector(".gift-container");
 
     function revealElement() {
@@ -201,4 +201,23 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("scroll", revealElement);
 });
 
+// modal box
+const toggleButton = document.getElementById('btn');
+const modal = document.querySelector('.modal');
+
+function toggleModal() {
+    modal.classList.toggle('hide');
+}
+
+toggleButton.addEventListener('click', toggleModal);
+
+
+const audio = document.getElementById("myAudio");
+const playButton = document.getElementById("btn");
+
+function togglePlay() {
+    audio.play();
+}
+
+toggleButton.addEventListener('click', togglePlay);
 
